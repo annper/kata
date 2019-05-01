@@ -11,11 +11,6 @@
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
-      // insert code here...
-      NSLog(@"Hello, World!");
-    
-    NSString *result = [PrinterErrors printerErrors:@"aabbcc"];
-    NSLog(@"%@", result);
   }
   return 0;
 }

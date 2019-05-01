@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7E6C194E22774259009B9C6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C194D22774259009B9C6D /* main.m */; };
 		7E6C1955227742B5009B9C6D /* PrinterErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C1954227742B5009B9C6D /* PrinterErrors.m */; };
+		7EFD65FD22784CD30055C64E /* PrinterErrorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD65FC22784CD30055C64E /* PrinterErrorsTests.m */; };
+		7EFD660422785AE20055C64E /* PrinterErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C1954227742B5009B9C6D /* PrinterErrors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +30,20 @@
 		7E6C194D22774259009B9C6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E6C1954227742B5009B9C6D /* PrinterErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterErrors.m; sourceTree = "<group>"; };
 		7E6C1956227742C6009B9C6D /* PrinterErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterErrors.h; sourceTree = "<group>"; };
+		7EFD65FA22784CD30055C64E /* PrinterErrorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrinterErrorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFD65FC22784CD30055C64E /* PrinterErrorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterErrorsTests.m; sourceTree = "<group>"; };
+		7EFD65FE22784CD30055C64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7E6C194722774259009B9C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFD65F722784CD30055C64E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6C194C22774259009B9C6D /* PrinterErrors */,
+				7EFD65FB22784CD30055C64E /* PrinterErrorsTests */,
 				7E6C194B22774259009B9C6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6C194A22774259009B9C6D /* PrinterErrors */,
+				7EFD65FA22784CD30055C64E /* PrinterErrorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +79,15 @@
 				7E6C1956227742C6009B9C6D /* PrinterErrors.h */,
 			);
 			path = PrinterErrors;
+			sourceTree = "<group>";
+		};
+		7EFD65FB22784CD30055C64E /* PrinterErrorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EFD65FC22784CD30055C64E /* PrinterErrorsTests.m */,
+				7EFD65FE22784CD30055C64E /* Info.plist */,
+			);
+			path = PrinterErrorsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +110,23 @@
 			productReference = 7E6C194A22774259009B9C6D /* PrinterErrors */;
 			productType = "com.apple.product-type.tool";
 		};
+		7EFD65F922784CD30055C64E /* PrinterErrorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFD660122784CD30055C64E /* Build configuration list for PBXNativeTarget "PrinterErrorsTests" */;
+			buildPhases = (
+				7EFD65F622784CD30055C64E /* Sources */,
+				7EFD65F722784CD30055C64E /* Frameworks */,
+				7EFD65F822784CD30055C64E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrinterErrorsTests;
+			productName = PrinterErrorsTests;
+			productReference = 7EFD65FA22784CD30055C64E /* PrinterErrorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +137,9 @@
 				ORGANIZATIONNAME = "Annie Persson";
 				TargetAttributes = {
 					7E6C194922774259009B9C6D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7EFD65F922784CD30055C64E = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -114,9 +157,20 @@
 			projectRoot = "";
 			targets = (
 				7E6C194922774259009B9C6D /* PrinterErrors */,
+				7EFD65F922784CD30055C64E /* PrinterErrorsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EFD65F822784CD30055C64E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E6C194622774259009B9C6D /* Sources */ = {
@@ -125,6 +179,15 @@
 			files = (
 				7E6C194E22774259009B9C6D /* main.m in Sources */,
 				7E6C1955227742B5009B9C6D /* PrinterErrors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFD65F622784CD30055C64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFD65FD22784CD30055C64E /* PrinterErrorsTests.m in Sources */,
+				7EFD660422785AE20055C64E /* PrinterErrors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -254,6 +318,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7EFD65FF22784CD30055C64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrinterErrorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annper.kata.PrinterErrorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7EFD660022784CD30055C64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrinterErrorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = annper.kata.PrinterErrorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -275,6 +374,15 @@
 			buildConfigurations = (
 				7E6C195222774259009B9C6D /* Debug */,
 				7E6C195322774259009B9C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFD660122784CD30055C64E /* Build configuration list for PBXNativeTarget "PrinterErrorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFD65FF22784CD30055C64E /* Debug */,
+				7EFD660022784CD30055C64E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
