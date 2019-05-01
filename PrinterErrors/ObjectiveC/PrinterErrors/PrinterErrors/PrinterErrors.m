@@ -21,16 +21,15 @@
   
   NSUInteger badCount = [characters filteredArrayUsingPredicate:predicate].count;
   
-  return [self printerErrorStringFromErrorCount:badCount totalCount:controlString.length];  
+  return [self printerErrorStringFromErrorCount:badCount totalCount:controlString.length];
 }
 
 + (NSMutableArray *) controlStringAsCharacters: (NSString *) controlString {
+  
   NSMutableArray *characters = [NSMutableArray arrayWithCapacity:controlString.length];
   
   for (int i = 0; i < controlString.length; i++) {
-    
-    NSString *charAtIndex = [NSString stringWithFormat:@"%c", [controlString characterAtIndex:i]];
-    [characters addObject:charAtIndex];
+    [characters addObject:[controlString substringWithRange:NSMakeRange(i, 1)]];
   }
   
   return characters;
