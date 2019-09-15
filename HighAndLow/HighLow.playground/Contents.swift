@@ -1,7 +1,8 @@
 import XCTest
 
 func highAndLow(_ numberString: String) -> String {
-  return ""
+  let numberArray = numberString.components(separatedBy: " ").map({ Int($0) ?? 0 }).sorted()
+  return "\(numberArray.first ?? 0) \(numberArray.last ?? 0)"
 }
 
 class Tests: XCTestCase {
@@ -9,6 +10,7 @@ class Tests: XCTestCase {
   func testChronologicalNumberString() {
     let result = highAndLow("1 2 3 4 5")
     let expected = "1 5"
+ 
     XCTAssertEqual(result, expected)
   }
   
